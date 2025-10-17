@@ -1,20 +1,31 @@
 {
   "name": "llm-deployment-project",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/23f1002146-tech/llm-deployment-api.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/23f1002146-tech/llm-deployment-api/issues"
+  },
+  "homepage": "https://github.com/23f1002146-tech/llm-deployment-api#readme",
   "dependencies": {
-    "@octokit/rest": "^22.0.0",
-    "cors": "^2.8.5",
+    "axios": "^1.12.2",
+    "body-parser": "^2.2.0",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
-    "openai": "^6.4.0"
+    "octokit": "^5.0.3",
+    "openai": "^6.4.0",
+    "simple-git": "^3.28.0"
   }
 }
