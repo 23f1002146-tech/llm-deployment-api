@@ -1,0 +1,54 @@
+Here's a minimal, working HTML + CSS + JS web app that fulfills the brief of creating a simple "Hello World" app. The code adheres to your requirements of being a single-page static app with inline CSS and JS, ensuring a clean and readable format.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World App</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="greeting">Hello World!</h1>
+
+    <script>
+        // You can expand functionality by updating the greeting dynamically
+        document.getElementById('greeting').addEventListener('click', function() {
+            this.textContent = 'You clicked me!';
+        });
+    </script>
+</body>
+</html>
+```
+
+### Explanation:
+1. **HTML Structure**:
+   - The HTML document defines a basic structure with a `<!DOCTYPE html>` declaration and necessary meta tags for character encoding and responsive design.
+   - The `<h1>` element displays the "Hello World!" message.
+
+2. **Inline CSS**:
+   - The `<style>` section contains simple styles to center the text and apply basic aesthetics like font and background color.
+
+3. **Inline JavaScript**:
+   - The `<script>` section includes a simple event listener that changes the text when the heading is clicked.
+
+### Usage:
+- Save the code in a file named `index.html`.
+- Open the file in a web browser to see the app in action. When you click on "Hello World!", the message will change to "You clicked me!". 
+
+This implementation is simple, self-contained, and directly meets the requirements without needing any backend or external libraries.
